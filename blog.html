@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Quest B10A5</title>
+    <!-- tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/d50734a2a3.js" crossorigin="anonymous"></script>
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- tailwind config script  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                buttonPrimay : '#B4F461',
+                navBarBg : '#F9F7F3',
+              }
+            }
+          }
+        }
+      </script>
+    
+</head>
+<body class="text-lexend">
+    <main class="">
+        <header class="sticky top-0 z-10">
+            <!-- navbar  -->
+            <div class="bg-navBarBg">
+                <div class="navbar container mx-auto py-4">
+                    <div class="navbar-start">
+                      <a class="btn bg-buttonPrimay text-xl">Blog</a>
+                    </div>
+                    <a href="index.html">
+                        <div class="flex items-center navbar-center gap-1 text-xl font-bold gap-x-5">
+                            <img src="assets/logo.png" class="" alt="Logo of DOM" > <span class="hidden lg:block">Donate Bangladesh</span>
+                        </div>
+                    </a>
+                    <div class="navbar-end">
+                      <a class="btn bg-transparent border-none hover:bg-transparent shadow-none"><img src="assets/coin.png" alt="Donate coin"> <span>5400</span> <span>BDT</span></a>
+                    </div>
+                  </div>
+            </div>
+              <!-- header bottom button  -->
+              <div class="grid grid-cols-12 bg-gray-50 py-10 gap-4 place-content-center">
+                <a  class="text-center col-span-4"></a>
+                <a href="index.html" class="btn text-center col-span-2">Donate</a>
+                <a href="history.html" class="btn text-center col-span-2">History</a>
+                <a class="text-center col-span-4"></a>
+              </div>
+        </header>
+
+        <!-- FAQ section -->
+        <section class="w-8/12 mx-auto my-10">
+            <!-- faq 2  -->
+            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
+              <!-- faq 2  -->
+              <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
+              <!-- faq 3 -->
+              <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
+        </section>
+       
+       <!-- footer section  -->
+     <footer class="bg-navBarBg p-14">
+        <p class="text-center text-xl">DOM With PH ©2024</p>
+     </footer>
+
+    </main>
+    <!-- js file link  -->
+     <script src="js/main.js"></script>
+</body>
+</html>
