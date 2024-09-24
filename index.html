@@ -38,7 +38,7 @@
             <div class="bg-navBarBg">
                 <div class="navbar container mx-auto py-4">
                     <div class="navbar-start">
-                      <a href="blog.html" class="btn bg-buttonPrimay text-xl">Blog</a>
+                      <a href="#" id="btn-blog-container" class="btn bg-buttonPrimay text-xl">Blog</a>
                     </div>
                     <a href="index.html">
                         <div class="flex items-center navbar-center gap-1 text-xl font-bold gap-x-5">
@@ -53,14 +53,14 @@
               <!-- header bottom button  -->
               <div class="grid grid-cols-12 bg-gray-50 py-10 gap-4 place-content-center">
                 <a  class="text-center col-span-4"></a>
-                <a href="index.html" class="btn text-center col-span-2">Donate</a>
-                <a href="history.html" class="btn text-center col-span-2">History</a>
+                <a id="btn-donate-container" href="#" class="btn text-center col-span-2">Donate</a>
+                <a id="btn-history-container" href="#" class="btn text-center col-span-2">History</a>
                 <a class="text-center col-span-4"></a>
               </div>
         </header>
 
         <!-- card section  -->
-         <section class="container mx-auto">
+         <section id="donate-container" class="container mx-auto">
             <!-- card 1  -->
             <div class="card card-side grid grid-flow-row lg:flex bg-base-100 p-5 shadow-xl my-8">
                 <figure class="lg:w-4/12">
@@ -133,6 +133,36 @@
               </div>
          </section>
 
+         <!-- history section -->
+        <section id="history-container" class="hidden w-8/12 mx-auto my-10">
+          histoy section
+        </section>
+
+         <!-- blog container FAQ section -->
+         <section id="blog-container" class="hidden w-8/12 mx-auto my-10">
+          <!-- faq 2  -->
+          <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+              <div class="collapse-content">
+                <p>tabindex="0" attribute is necessary to make the div focusable</p>
+              </div>
+            </div>
+            <!-- faq 2  -->
+            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+              <div class="collapse-content">
+                <p>tabindex="0" attribute is necessary to make the div focusable</p>
+              </div>
+            </div>
+            <!-- faq 3 -->
+            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+              <div class="collapse-content">
+                <p>tabindex="0" attribute is necessary to make the div focusable</p>
+              </div>
+            </div>
+      </section>
+
        
     </main>
 
@@ -142,6 +172,7 @@
      </footer>
 
     <!-- js file link  -->
+     <script src="js/features.js"></script>
      <script src="js/donate.js"></script>
      <script src="js/main.js"></script>
 </body>
