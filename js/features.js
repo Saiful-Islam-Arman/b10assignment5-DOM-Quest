@@ -10,8 +10,19 @@ document.getElementById('btn-history-container')
 })
 
 // blog container
-// history container
 document.getElementById('btn-blog-container')
     .addEventListener('click', function(){
         showSectionById('blog-container');
 })
+
+// active color button donate section
+document.getElementById('btn-donate-container')
+    .addEventListener('click', function(){
+        showButtonActiveColor('btn-donate-container')
+    })
+
+// active color button history section
+document.getElementById('btn-history-container')
+    .addEventListener('click', function(){
+        showButtonActiveColor('btn-history-container')
+    })
