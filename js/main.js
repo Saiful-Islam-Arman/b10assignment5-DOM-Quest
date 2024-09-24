@@ -81,10 +81,11 @@ document.getElementById('btn-donate3')
         document.getElementById('self-balance').innerText = selfBalanceTotal;
 
         // add donation history to history section
+        const d = new Date();
         const p = document.createElement('p');
         p.innerHTML += `
             <p> ${donateQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-            <p></p>
+            <p>${d}</p>
         `
 
         document.getElementById('history-container').appendChild(p);
