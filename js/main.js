@@ -20,7 +20,14 @@ document.getElementById('btn-donate2')
     .addEventListener('click', function(event){
         event.preventDefault();
         const donateFeni = getInputValueById('input-value-feni');
-        console.log(donateFeni);
+        const TotalDonateCatch = getTextFieldValueById('donate-feni');
+        const selfBalance = getTextFieldValueById('self-balance');
+        const totalDonateAmount = donateFeni + TotalDonateCatch;
+        const selfBalanceTotal = selfBalance - donateFeni;
+        document.getElementById('donate-feni').innerText = totalDonateAmount;
+        document.getElementById('self-balance').innerText = selfBalanceTotal;
+
+        
 
     });
 
@@ -28,7 +35,16 @@ document.getElementById('btn-donate2')
 document.getElementById('btn-donate3')
     .addEventListener('click', function(event){
         event.preventDefault();
-        const donateFeni = getInputValueById('input-value-quota');
-        console.log(donateFeni);
+        const donateQuota = getInputValueById('input-value-quota');
+        const TotalDonateCatch = getTextFieldValueById('donate-quota');
+        const selfBalance = getTextFieldValueById('self-balance');
+        if(isNaN(donateQuota)){
+            alert("please Donte valid amount");
+            return;
+        }
+        const totalDonateAmount = donateQuota + TotalDonateCatch;
+        const selfBalanceTotal = selfBalance - donateQuota;
+        document.getElementById('donate-quota').innerText = totalDonateAmount;
+        document.getElementById('self-balance').innerText = selfBalanceTotal;
 
     });
