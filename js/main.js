@@ -153,7 +153,7 @@ function showSectionById(id){
     // hide all the section
     document.getElementById('donate-container').classList.add('hidden');
     document.getElementById('history-container').classList.add('hidden');
-    document.getElementById('blog-container').classList.add('hidden');
+    // document.getElementById('blog-container').classList.add('hidden');
 
     //show the section with provided id as perameter
     document.getElementById(id).classList.remove('hidden');

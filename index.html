@@ -38,7 +38,7 @@
             <div class="bg-navBarBg">
                 <div class="navbar container mx-auto py-4">
                     <div class="navbar-start">
-                      <a href="#" id="btn-blog-container" class="btn bg-buttonPrimay text-xl">Blog</a>
+                      <a onclick="openBlog()" class="btn bg-buttonPrimay text-xl">Blog</a>
                     </div>
                     <a href="index.html">
                         <div class="flex items-center navbar-center gap-1 text-xl font-bold gap-x-5">
@@ -52,10 +52,10 @@
             </div>
               <!-- header bottom button  -->
               <div class="grid grid-cols-12  py-10 gap-4 place-content-center">
-                <a  class="text-center col-span-4"></a>
-                <a id="btn-donate-container" href="#" class="btn text-center col-span-2 bg-buttonPrimay">Donate</a>
-                <a id="btn-history-container" href="#" class="btn text-center col-span-2">History</a>
-                <a class="text-center col-span-4"></a>
+                <a  class="text-center col-span-2 md:col-span-4"></a>
+                <a id="btn-donate-container" href="#" class="btn text-center col-span-4 md:col-span-2 bg-buttonPrimay">Donate</a>
+                <a id="btn-history-container" href="#" class="btn text-center col-span-4 md:col-span-2">History</a>
+                <a class="text-center col-span-2 md:col-span-4 "></a>
               </div>
         </header>
 
@@ -147,78 +147,7 @@
         <section id="history-container" class="hidden  w-8/12 mx-auto my-10">
           
         </section>
-
-         <!-- blog container FAQ section -->
-         <section id="blog-container" class="hidden w-8/12 mx-auto my-10">
-          <!-- faq 2  -->
-          <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
-              <div class="collapse-title text-xl font-medium">What is DOM (Document Object Model)?</div>
-              <div class="collapse-content">
-                <p>The Document Object Model (DOM) is the data representation of the objects that
-                   comprise the structure and content of a document on the web.
-                  With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</p>
-              </div>
-            </div>
-            <!-- faq 2  -->
-            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
-              <div class="collapse-title text-xl font-medium">how the object model, JavaScript gets all the power it needs to create dynamic HTML?</div>
-              <div class="collapse-content">
-                <p>
-                  JavaScript can change all the HTML elements in the page. <br>
-                  JavaScript can change all the HTML attributes in the page. <br>
-                  JavaScript can change all the CSS styles in the page. <br>
-                  JavaScript can remove existing HTML elements and attributes. <br>
-                  JavaScript can add new HTML elements and attributes. <br>
-                  JavaScript can react to all existing HTML events in the page. <br>
-                  JavaScript can create new HTML events in the page. <br>
-                </p>
-              </div>
-            </div>
-            <!-- faq 3 -->
-            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
-              <div class="collapse-title text-xl font-medium">What are the steps to becoming an expert in JavaScript?</div>
-              <div class="collapse-content">
-                <p>
-                  Embarking on a career as a JavaScript Developer is an exciting journey 
-                  into the world of web and software development. As the backbone of dynamic
-                   web content, JavaScript is a critical skill for creating interactive
-                    and responsive user experiences. To become a proficient JavaScript
-                     Developer, you must be prepared to immerse yourself in learning
-                      programming concepts, frameworks, and best practices. This path 
-                      involves a combination of formal education, self-driven learning,
-                       practical experience, and networking. If you are committed to
-                        pursuing this career, be ready to continuously evolve with the
-                         technology, solve complex problems, and create innovative solutions
-                          that enhance the web for users everywhere.
-
-                </p>
-              </div>
-            </div>
-
-            <!-- faq 4 -->
-            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
-              <div class="collapse-title text-xl font-medium">How helpful to Build Real-World Projects with js?</div>
-              <div class="collapse-content">
-                <p>
-                  Practical experience is key to becoming a proficient JavaScript Developer. Start by creating simple projects and gradually increase complexity as you gain confidence. Contribute to open-source projects, participate in coding challenges, or develop your own applications. This hands-on approach will help you understand the nuances of JavaScript development, debugging, and performance optimization.
-                   It will also result in a portfolio of work that you can showcase to potential employers.
-
-                </p>
-              </div>
-            </div>
-
-            <!-- faq 5 -->
-            <div tabindex="0" class="collapse collapse-arrow my-6 border-base-300 bg-base-200 border">
-              <div class="collapse-title text-xl font-medium">What are the Key Skills for Aspiring JavaScript Developers?</div>
-              <div class="collapse-content">
-                <p>
-                  A JavaScript Developer must possess a strong grasp of JavaScript fundamentals and be proficient in using various frameworks and libraries to build scalable and maintainable applications. Essential technical skills include understanding of asynchronous programming, closures, and ES6+ features. Familiarity with back-end technologies like Node.js and databases, both SQL and NoSQL, can be advantageous for full-stack development roles. Strong problem-solving abilities, attention to detail, and the capacity to write clean, well-documented code are also critical. Soft skills such as effective communication, teamwork, and time management
-                   are necessary for collaborating with other developers, designers, and stakeholders.
-
-                </p>
-              </div>
-            </div>
-        </section>
+ 
 
        
     </main>

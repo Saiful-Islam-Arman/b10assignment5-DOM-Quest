@@ -1,3 +1,7 @@
+function openBlog(){
+    window.location.replace("blog.html");
+}
+
 document.getElementById('btn-donate-container')
     .addEventListener('click', function(){
         showSectionById('donate-container');
@@ -9,11 +13,11 @@ document.getElementById('btn-history-container')
         showSectionById('history-container');
 })
 
-// blog container
-document.getElementById('btn-blog-container')
-    .addEventListener('click', function(){
-        showSectionById('blog-container');
-})
+// // blog container
+// document.getElementById('btn-blog-container')
+//     .addEventListener('click', function(){
+//         showSectionById('blog-container');
+// })
 
 // active color button donate section
 document.getElementById('btn-donate-container')
